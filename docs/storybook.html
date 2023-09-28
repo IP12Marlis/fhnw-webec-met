@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Storybook for the Web Engineering Module</title>
     <style>
         body {
             display:  flex;
             gap:      normal;
-            margin:   50em;
+            margin:   10em;
         }
 
         h1 {
             font-family: Bahnschrift, "Trebuchet MS", sans-serif;
             font-size: larger;
-            color: darkgreen;
             background-color: fuchsia;
+            color: darkgreen;
         }
 
         h2 {
             font-family: Bahnschrift, "Trebuchet MS", sans-serif;
             font-size: large;
-            color: darkgreen;
             background-color: fuchsia;
+            color: darkgreen;
         }
 
         section {
             background-color: lemonchiffon;
         }
 
-        #context {
-            color: aqua;
-        }
-
-        #content {
+        section#context {
             color: blue;
         }
 
-        #criteria {
-            color: cornflowerblue;
+        section#content {
+            color: blue;
         }
 
         article {
             color: darkseagreen;
         }
+
+        article#criteria {
+            color: blue;
+        }
+
+        header {
+
+        }
+        table, th, td {
+            border-collapse: collapse;
+            padding: .3em .5em;
+        }
+
+        table {
+            margin-left: 1em;
+        }
+
+        thead {
+            position: sticky;
+            top: 0;
+        }
+        th, caption {
+            background-color: chartreuse;
+            color: darkgreen;
+            border: thin solid black;
+        }
+
+        td {
+            border-left: thin solid black;
+            border-right: thin solid black;
+        }
+
+        tfoot {
+            border-bottom: thin solid black;
+        }
     </style>
 </head>
-
 <body>
 <header style="color: darkgreen;font-weight: bolder;font-size: x-large; background-color: oldlace;">
     <dfn title="Drehbuch">Storybook</dfn> for the Web Engineering Module
@@ -67,43 +97,43 @@
                 <thead>
                 <tr>
                     <th> Date </th>
-                    <th> # </th>
+                    <th> </th>
                     <th>Topic</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>Mi, 20.09.23</td>
-                    <td></td>
+                    <td> </td>
                     <td>HTML</td>
                 </tr>
                 <tr>
                     <td>Mi, 27.09.23</td>
-                    <td></td>
+                    <td> </td>
                     <td>CSS</td>
                 </tr>
                 <tr>
                     <td>Mi, 04.10.23</td>
-                    <td></td>
+                    <td> </td>
                     <td>Grails, Web, MVC, Test</td>
                 </tr>
                 <tr>
                     <td>Mi, 11.10.23</td>
-                    <td></td>
+                    <td> </td>
                     <td>GSP, Template, Taglib, Layout</td>
                 </tr>
                 <tr>
                     <td>Mi, 18.10.23</td>
-                    <td></td>
+                    <td> </td>
                     <td>Persistence, DB-Access</td>
                 </tr>
                 <tr>
                     <td>Mi, 25.10.23</td>
-                    <td></td>
+                    <td> </td>
                     <td>Simple Security</td>
                 </tr>
                 <tr><td>Mi, 01.11.23</td>
-                    <td></td>
+                    <td> </td>
                     <td>REST, Services</td>
                 </tr>
                 <tr>
@@ -113,12 +143,12 @@
                 </tr>
                 <tr>
                     <td>Mi, 15.11.23</td>
-                    <td></td>
+                    <td> </td>
                     <td>Javascript</td>
                 </tr>
                 <tr>
                     <td>Mi, 22.11.23</td>
-                    <td></td>
+                    <td> </td>
                     <td>Responsive / Mobile Web</td>
                 </tr>
                 <tr>
@@ -128,12 +158,12 @@
                 </tr>
                 <tr>
                     <td>Mi, 06.12.23</td>
-                    <td></td>
+                    <td> </td>
                     <td>&Uuml;bungsanlass</td>
                 </tr>
                 <tr>
                     <td>Mi, 13.12.23</td>
-                    <td></td>
+                    <td> </td>
                     <td>&Uuml;bungsanlass</td>
                 </tr>
                 <tr>
@@ -143,12 +173,12 @@
                 </tr>
                 <tr>
                     <td>Mi, 10.01.24</td>
-                    <td></td>
+                    <td> </td>
                     <td>Deployment</td>
                 </tr>
                 <tr>
                     <td>Mi, 17.01.24</td>
-                    <td></td>
+                    <td> </td>
                     <td>Pr&uuml;fungsvorbereitung</td>
                 </tr>
                 </tbody>
@@ -177,7 +207,6 @@
             </ul>
             <p> Your exercise will determine your <abbr title="Erfahrungsnote">continuous assessment grade (EN)</abbr>. </p>
             <p> EN and MSP together make your final grade. </p>
-
         </article>
     </section>
 </main>
@@ -185,5 +214,4 @@
     <address>Dierk König, 5.2B16, mailto: dierk.koenig@fhnw.ch</address>
 </footer>
 </body>
-
 </html>
