@@ -1,0 +1,5 @@
+= ws3C-met
+
+== ws3C
+Der Workshop Webdesign vermittelt die Grundlagen in html und CSS.
+Weiter geht es darum, die analytischen Fähigkeiten zur Gestaltung von Webseiten zu trainieren.
