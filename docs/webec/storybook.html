@@ -50,7 +50,7 @@
         }
 
         table {
-            width: 100%;
+            width: 75%;
             margin-left: 1em;
         }
 
@@ -59,8 +59,8 @@
             top: 0;
         }
         th, caption {
-            height: 20px;
             background-color: chartreuse;
+            font-size: 5vh;
             font-stretch: ultra-expanded;
             font-weight: bolder;
             color: darkblue;
@@ -70,11 +70,23 @@
         td {
             border-left: thin solid black;
             border-right: thin solid black;
+            padding: 2vh 0;
+            font-size: 3vh;
             color: black;
+        }
+
+        #mandatory {
+            color: red;
+            font-weight: bolder;
+            animation: wordgrow 0.3s infinite;
         }
 
         tfoot {
             border-bottom: thin solid black;
+        }
+
+        @keyframes wordgrow {
+            50% {font-size: 32px;}
         }
     </style>
 </head>
@@ -139,7 +151,7 @@
                 </tr>
                 <tr>
                     <td>Mi, 08.11.23</td>
-                    <td>ANWESENHEITSPLICHT!</td>
+                    <td id="mandatory">ANWESENHEITSPLICHT!</td>
                     <td>&Uuml;bungsvorbereitung</td>
                 </tr>
                 <tr>
