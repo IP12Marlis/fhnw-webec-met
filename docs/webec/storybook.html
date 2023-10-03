@@ -6,7 +6,9 @@
     <title>Storybook for the Web Engineering Module</title>
     <style>
         body {
-            background-color: oldlace;
+            background-color: #ffffff;
+            font-family: Bahnschrift, "Tahoma", sans-serif;
+            font-size: medium;
             grid-template-areas:
                 "header"
                 "main"
@@ -14,7 +16,6 @@
         }
 
         h1 {
-            font-family: Bahnschrift, "Trebuchet MS", sans-serif;
             font-size: xx-large;
             color: darkblue;
         }
@@ -22,7 +23,6 @@
         h2 {
             padding-top: 1vh;
             padding-bottom: 1vh;
-            font-family: Bahnschrift, "Trebuchet MS", sans-serif;
             font-size: larger;
             background-color: darkblue;
             color: yellow;
@@ -34,7 +34,6 @@
 
         section#context {
             color: black;
-            font-size: large;
         }
 
         section#content {
@@ -46,21 +45,35 @@
         }
 
         article#effort {
-            font-size: medium;
+            display: grid;
+            grid-template-columns: 60% 5% 33%;
+            grid-template-rows: repeat(7, [row] auto);
+        }
+
+        article#effort > h2 {
+            grid-column: 1 / 4;
+        }
+
+        article#effort p {
+            grid-column: 1 / 4;
+            display: grid;
+            grid-gap: 0.3rem;
+            grid-template-columns: 70% 28%;
+        }
+
+        #total_effort {
+            font-weight: bold;
+        }
+
+        code {
+            grid-column: 2 / 3;
+            text-align: right;
+            font-size: large;
         }
 
         article#criteria {
             background-color: yellow;
             font-size: large;
-        }
-
-        code {
-            font-size: large;
-            text-align: end;
-        }
-
-        header {
-            width: max-content;
         }
 
         table, th, td {
@@ -91,17 +104,13 @@
             border-right: thin solid black;
             padding: 1vh 0;
             font-size: large;
+            font-stretch: ultra-expanded;
             color: black;
-        }
-
-        code {
-            text-align: end;
         }
 
         .mandatory {
             color: red;
             font-weight: bolder;
-            animation: wordgrow 3s;
         }
 
         .projectweek {
@@ -119,13 +128,13 @@
             border-bottom: thin solid black;
         }
 
-        @keyframes wordgrow {
-            30% {font-size: 16px;}
+        footer {
+            background-color: chartreuse;
         }
     </style>
 </head>
 <body>
-<header style="color: darkgreen;font-weight: bolder;font-size: xx-large;">
+<header style="background-color: chartreuse; color: darkblue; font-weight: bolder; font-size: xx-large;">
     <dfn><abbr title="Drehbuch">Storybook</abbr></dfn> for the Web Engineering Module
 </header>
 <main>
@@ -238,12 +247,12 @@
         </article>
         <article id="effort">
             <h2> Total Effort</h2>
-            <p> Classroom lectures add up to <code>15 * 3h = 45h</code>.</p>
-            <p> Prework and afterwork, including homework adds up to <code>15 * 1h = 15h</code>.</p>
-            <p> The exercise for the continuous assessment grade takes <code>4 * 5h = 20h</code>.</p>
-            <p> Preparation for the final exam will take approximately <code>8h</code>.</p>
-            <p> Writing the final exam takes <code>2h</code>.</p>
-            <p> This makes a total of <code>90h</code>.</p>
+                <p> Classroom lectures add up to<code>15 * 3h = 45h </code></p>
+                <p> Prework and afterwork, including homework adds up to <code>15 * 1h = 15h</code></p>
+                <p> The exercise for the continuous assessment grade takes <code>4 * 5h = 20h</code></p>
+                <p> Preparation for the final exam will take approximately <code>8h</code></p>
+                <p> Writing the final exam takes <code>2h</code></p>
+                <p id="total_effort"> This makes a total of <code>90h</code></p>
         </article>
         <article id="criteria">
             <h2> Passing criteria </h2>
@@ -252,7 +261,7 @@
                 <li>You have to do the exercise and deliver before the deadline.</li>
                 <li>You have to attend the <dfn title="Modulschlussprüfung">final exam (MSP)</dfn>.</li>
             </ul>
-            <p> Your exercise will determine your <abbr title="Erfahrungsnote">continuous assessment grade (EN)</abbr>. </p>
+            <p> Your exercise will determine your <abbr title="Erfahrungsnote">continuous assessment grade (EN)</abbr>.</p>
             <p> EN and MSP together make your final grade. </p>
         </article>
     </section>
